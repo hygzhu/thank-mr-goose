@@ -11,7 +11,9 @@ import {
 
 const Home = props => (
   <div>
-    <p><button onClick={() => props.viewMap()}>View Map</button></p>
+    <div className={"viewMap"}>
+      <button onClick={() => props.viewMap()}>View Map</button>
+    </div>
   </div>
 )
 

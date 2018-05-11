@@ -5,14 +5,22 @@ import Login from '../login'
 import Map from '../map'
 import Friends from '../friends'
 
+import './app.css'
+
 const App = () => (
   <div>
     <header>
-      <h1>Thank Mr Goose</h1>
-      <div>
-        <div><Link to="/">My Collection</Link></div>
-        <div><Link to="/friends">Friends</Link></div>
-        <div><Link to="/login">Temp Login Link</Link></div>
+      <h1 className={"mainTitle"}>Thank Mr Goose</h1>
+      <div className={"navWrapper"}>
+        <div className={"linkWrapper"}>
+          <Link to="/"><div className={"buttonInner"}>My Collection</div></Link>
+        </div>
+        <div className={"linkWrapper"}>
+          <Link to="/friends"><div className={"buttonInner"}>Friends</div></Link>
+        </div>
+        <div>
+          <Link to="/login"><div>Temp Login Link</div></Link>
+        </div>
       </div>
     </header>
 

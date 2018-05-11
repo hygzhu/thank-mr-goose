@@ -3,12 +3,21 @@ import { push } from 'react-router-redux'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
+import './friends.css'
+
 const Friends = (props) => (
   <div>
-    <div>
-      <img src={"ron.png"}/><h5>Ron Li : Offline</h5><button>View Profile</button>
+    <div className={"friendsWrapper"}>
+      <h3 className={"friendsHeader"}>Friends</h3>
+      <div>
+        <img className={"inlineBlock"} src={"ron.png"} alt="profile"/>
+        <div className={"inlineBlock playerName"}>Ron Li : Offline</div>
+        <button className={"inlineBlock"}>View Profile</button>
+      </div>
     </div>
-    <p><button onClick={() => props.viewMap()}>View Map</button></p>
+    <div className={"viewMap"}>
+      <button onClick={() => props.viewMap()}>View Map</button>
+    </div>
   </div>
 )
 
