@@ -5,7 +5,7 @@ import Login from '../login'
 import Map from '../map'
 import Friends from '../friends'
 
-import './index.css'
+import './app.css'
 
 const App = () => (
   <div>

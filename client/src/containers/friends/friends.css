@@ -1,0 +1,19 @@
+.friendsHeader {
+  font-size: 24px;
+}
+
+.inlineBlock {
+  display: inline-block;
+  margin: 5px;
+}
+
+.friendsWrapper {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.playerName {
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 16px;
+}
